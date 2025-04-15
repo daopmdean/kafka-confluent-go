@@ -51,7 +51,37 @@ Run Producer
 out/producer
 ```
 
+Sample output
+```
+daopham@Deans-MacM2 kafka-confluent-go % out/producer 
+Produced event to topic purchases: key = jsmith     value = gift card
+Produced event to topic purchases: key = awalther   value = gift card
+Produced event to topic purchases: key = awalther   value = t-shirts
+Produced event to topic purchases: key = sgarcia    value = gift card
+Produced event to topic purchases: key = awalther   value = book
+Produced event to topic purchases: key = jbernard   value = book
+Produced event to topic purchases: key = sgarcia    value = book
+Produced event to topic purchases: key = sgarcia    value = batteries
+Produced event to topic purchases: key = jsmith     value = alarm clock
+Produced event to topic purchases: key = eabara     value = batteries
+```
+
 Run Consumer
 ```
 out/consumer
+```
+
+Sample output
+```
+daopham@Deans-MacM2 kafka-confluent-go % out/consumer 
+Consumed event from topic purchases: key = jsmith     value = gift card
+Consumed event from topic purchases: key = awalther   value = gift card
+Consumed event from topic purchases: key = awalther   value = t-shirts
+Consumed event from topic purchases: key = sgarcia    value = gift card
+Consumed event from topic purchases: key = awalther   value = book
+Consumed event from topic purchases: key = jbernard   value = book
+Consumed event from topic purchases: key = sgarcia    value = book
+Consumed event from topic purchases: key = sgarcia    value = batteries
+Consumed event from topic purchases: key = jsmith     value = alarm clock
+Consumed event from topic purchases: key = eabara     value = batteries
 ```
