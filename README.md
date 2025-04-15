@@ -29,6 +29,11 @@ Create a topic named "phurchases"
 confluent local kafka topic create phurchases
 ```
 
+When you are done with local kafka
+```
+confluent local kafka stop
+```
+
 ## Build 
 
 ```
@@ -37,4 +42,16 @@ go build -o out/producer cmd/producer/producer.go
 
 ```
 go build -o out/consumer cmd/consumer/consumer.go
+```
+
+## Run
+
+Run Producer
+```
+out/producer
+```
+
+Run Consumer
+```
+out/consumer
 ```
